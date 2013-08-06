@@ -101,21 +101,21 @@
             <dependency>
                 <groupId>org.agorava</groupId>
                 <artifactId>agorava-core-api</artifactId>
-                <version>${agorava-core.version}</version>
+                <version>${project.version}</version>
                 <scope>compile</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.agorava</groupId>
                 <artifactId>agorava-core-impl-cdi</artifactId>
-                <version>${agorava-core.version}</version>
+                <version>${project.version}</version>
                 <scope>compile</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.agorava</groupId>
                 <artifactId>agorava-core-impl</artifactId>
-                <version>${agorava-core.version}</version>
+                <version>${project.version}</version>
                 <scope>compile</scope>
             </dependency>
 
