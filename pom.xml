@@ -251,6 +251,12 @@
                 <scope>test</scope>
             </dependency>
 
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${slf4j-simple.version}</version>
+                <scope>test</scope>
+            </dependency>
 
             <!-- OWB specific dependencies-->
             <dependency>
@@ -322,51 +328,6 @@
     </dependencyManagement>
 
     <profiles>
-        <profile>
-            <id>weld-1.x</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <dependencyManagement>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.jboss.weld</groupId>
-                        <artifactId>weld-core</artifactId>
-                        <version>${weld-core-1.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.slf4j</groupId>
-                        <artifactId>slf4j-simple</artifactId>
-                        <version>${slf4j-simple.version}</version>
-                        <scope>test</scope>
-                    </dependency>
-                </dependencies>
-            </dependencyManagement>
-        </profile>
-        <profile>
-            <id>weld-2.x</id>
-            <dependencyManagement>
-                <dependencies>
-                    <dependency>
-                        <groupId>javax.enterprise</groupId>
-                        <artifactId>cdi-api</artifactId>
-                        <version>${cdi-1-1.version}</version>
-                        <scope>provided</scope>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.jboss.weld</groupId>
-                        <artifactId>weld-core</artifactId>
-                        <version>${weld-core-2.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.slf4j</groupId>
-                        <artifactId>slf4j-simple</artifactId>
-                        <version>${slf4j-simple.version}</version>
-                        <scope>test</scope>
-                    </dependency>
-                </dependencies>
-            </dependencyManagement>
-        </profile>
         <profile>
             <id>release-profile</id>
             <activation>
