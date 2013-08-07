@@ -15,9 +15,7 @@
   ~ limitations under the License.
   -->
 
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -28,7 +26,7 @@
 
     <groupId>org.agorava</groupId>
     <artifactId>agorava-bom</artifactId>
-    <version>0.7.0-SNAPSHOT</version>
+    <version>0.6.1</version>
     <packaging>pom</packaging>
 
     <licenses>
@@ -43,7 +41,8 @@
         <connection>scm:git:git://github.com/agorava/agorava-bom.git</connection>
         <developerConnection>scm:git:git@github.com:agorava/agorava-bom.git</developerConnection>
         <url>http://github.com/agorava/agorava-bom</url>
-    </scm>
+        <tag>0.6.1</tag>
+  </scm>
 
     <properties>
         <cdi-1.version>1.0-SP4</cdi-1.version>
@@ -101,21 +100,21 @@
             <dependency>
                 <groupId>org.agorava</groupId>
                 <artifactId>agorava-core-api</artifactId>
-                <version>${agorava-core.version}</version>
+                <version>${project.version}</version>
                 <scope>compile</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.agorava</groupId>
                 <artifactId>agorava-core-impl-cdi</artifactId>
-                <version>${agorava-core.version}</version>
+                <version>${project.version}</version>
                 <scope>compile</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.agorava</groupId>
                 <artifactId>agorava-core-impl</artifactId>
-                <version>${agorava-core.version}</version>
+                <version>${project.version}</version>
                 <scope>compile</scope>
             </dependency>
 
@@ -251,6 +250,12 @@
                 <scope>test</scope>
             </dependency>
 
+            <dependency>
+                <groupId>org.slf4j</groupId>
+                <artifactId>slf4j-simple</artifactId>
+                <version>${slf4j-simple.version}</version>
+                <scope>test</scope>
+            </dependency>
 
             <!-- OWB specific dependencies-->
             <dependency>
@@ -322,51 +327,6 @@
     </dependencyManagement>
 
     <profiles>
-        <profile>
-            <id>weld-1.x</id>
-            <activation>
-                <activeByDefault>true</activeByDefault>
-            </activation>
-            <dependencyManagement>
-                <dependencies>
-                    <dependency>
-                        <groupId>org.jboss.weld</groupId>
-                        <artifactId>weld-core</artifactId>
-                        <version>${weld-core-1.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.slf4j</groupId>
-                        <artifactId>slf4j-simple</artifactId>
-                        <version>${slf4j-simple.version}</version>
-                        <scope>test</scope>
-                    </dependency>
-                </dependencies>
-            </dependencyManagement>
-        </profile>
-        <profile>
-            <id>weld-2.x</id>
-            <dependencyManagement>
-                <dependencies>
-                    <dependency>
-                        <groupId>javax.enterprise</groupId>
-                        <artifactId>cdi-api</artifactId>
-                        <version>${cdi-1-1.version}</version>
-                        <scope>provided</scope>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.jboss.weld</groupId>
-                        <artifactId>weld-core</artifactId>
-                        <version>${weld-core-2.version}</version>
-                    </dependency>
-                    <dependency>
-                        <groupId>org.slf4j</groupId>
-                        <artifactId>slf4j-simple</artifactId>
-                        <version>${slf4j-simple.version}</version>
-                        <scope>test</scope>
-                    </dependency>
-                </dependencies>
-            </dependencyManagement>
-        </profile>
         <profile>
             <id>release-profile</id>
             <activation>
