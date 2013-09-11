@@ -86,6 +86,7 @@
         <nexus-maven-plugin.version>2.1</nexus-maven-plugin.version>
 
         <commons-codec.version>1.8</commons-codec.version>
+        <javax.inject.version>1</javax.inject.version>
     </properties>
 
     <dependencyManagement>
@@ -95,6 +96,13 @@
                 <groupId>javax.enterprise</groupId>
                 <artifactId>cdi-api</artifactId>
                 <version>${cdi-1.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>javax.inject</groupId>
+                <artifactId>javax.inject</artifactId>
+                <version>${javax.inject.version}</version>
                 <scope>provided</scope>
             </dependency>
 
