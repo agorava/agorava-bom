@@ -116,21 +116,7 @@
 
             <dependency>
                 <groupId>org.agorava</groupId>
-                <artifactId>agorava-core-api-web</artifactId>
-                <version>${project.version}</version>
-                <scope>compile</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.agorava</groupId>
                 <artifactId>agorava-core-impl-cdi</artifactId>
-                <version>${project.version}</version>
-                <scope>compile</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.agorava</groupId>
-                <artifactId>agorava-core-impl-cdi-web</artifactId>
                 <version>${project.version}</version>
                 <scope>compile</scope>
             </dependency>
