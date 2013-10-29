@@ -85,6 +85,7 @@
 
         <commons-codec.version>1.8</commons-codec.version>
         <javax.inject.version>1</javax.inject.version>
+        <jsf-api.version>2.0</jsf-api.version>
     </properties>
 
     <dependencyManagement>
@@ -210,7 +211,14 @@
             </dependency>
 
             <dependency>
-                <groupId>org.mockito</groupId>
+                <groupId>javax.faces</groupId>
+                <artifactId>jsf-api</artifactId>
+                <version>${jsf-api.version}</version>
+                <scope>provided</scope>
+            </dependency>
+
+            <dependency>
+            <groupId>org.mockito</groupId>
                 <artifactId>mockito-all</artifactId>
                 <version>${mockito.version}</version>
                 <scope>test</scope>
