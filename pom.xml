@@ -50,7 +50,6 @@
         <cdi-1-1.version>1.1</cdi-1-1.version>
         <jackson.version>1.9.2</jackson.version>
         <guava.version>11.0.2</guava.version>
-        <commons-lang.version>3.1</commons-lang.version>
         <commons-collection.version>3.2.1</commons-collection.version>
         <commons-beanutils.version>1.8.3</commons-beanutils.version>
         <mockito.version>1.9.0</mockito.version>
@@ -83,7 +82,6 @@
         <maven-gpg-plugin.version>1.4</maven-gpg-plugin.version>
         <nexus-maven-plugin.version>2.1</nexus-maven-plugin.version>
 
-        <commons-codec.version>1.8</commons-codec.version>
         <javax.inject.version>1</javax.inject.version>
         <jsf-api.version>2.0</jsf-api.version>
     </properties>
@@ -138,20 +136,6 @@
                 <groupId>org.codehaus.jackson</groupId>
                 <artifactId>jackson-mapper-asl</artifactId>
                 <version>${jackson.version}</version>
-                <scope>compile</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>org.apache.commons</groupId>
-                <artifactId>commons-lang3</artifactId>
-                <version>${commons-lang.version}</version>
-                <scope>compile</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>commons-codec</groupId>
-                <artifactId>commons-codec</artifactId>
-                <version>${commons-codec.version}</version>
                 <scope>compile</scope>
             </dependency>
 
@@ -218,7 +202,7 @@
             </dependency>
 
             <dependency>
-            <groupId>org.mockito</groupId>
+                <groupId>org.mockito</groupId>
                 <artifactId>mockito-all</artifactId>
                 <version>${mockito.version}</version>
                 <scope>test</scope>
