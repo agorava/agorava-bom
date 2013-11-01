@@ -49,7 +49,6 @@
         <cdi-1.version>1.0-SP4</cdi-1.version>
         <cdi-1-1.version>1.1</cdi-1-1.version>
         <jackson.version>1.9.2</jackson.version>
-        <guava.version>11.0.2</guava.version>
         <commons-collection.version>3.2.1</commons-collection.version>
         <commons-beanutils.version>1.8.3</commons-beanutils.version>
         <mockito.version>1.9.0</mockito.version>
@@ -122,13 +121,6 @@
                 <groupId>org.agorava</groupId>
                 <artifactId>agorava-core-impl</artifactId>
                 <version>${project.version}</version>
-                <scope>compile</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>com.google.guava</groupId>
-                <artifactId>guava</artifactId>
-                <version>${guava.version}</version>
                 <scope>compile</scope>
             </dependency>
 
