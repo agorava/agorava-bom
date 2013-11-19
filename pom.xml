@@ -48,9 +48,7 @@
     <properties>
         <cdi-1.version>1.0-SP4</cdi-1.version>
         <cdi-1-1.version>1.1</cdi-1-1.version>
-        <jackson.version>2.2.3</jackson.version>
-        <commons-collection.version>3.2.1</commons-collection.version>
-        <commons-beanutils.version>1.8.3</commons-beanutils.version>
+        <jackson.version>2.3.0</jackson.version>
         <deltaspike.version>0.5</deltaspike.version>
         <servlet.version>3.0.1</servlet.version>
         <maven-gpg-plugin.version>1.4</maven-gpg-plugin.version>
@@ -89,14 +87,14 @@
                 <groupId>org.agorava</groupId>
                 <artifactId>agorava-core-impl-cdi</artifactId>
                 <version>${project.version}</version>
-                <scope>compile</scope>
+                <scope>runtime</scope>
             </dependency>
 
             <dependency>
                 <groupId>org.agorava</groupId>
                 <artifactId>agorava-core-impl</artifactId>
                 <version>${project.version}</version>
-                <scope>compile</scope>
+                <scope>runtime</scope>
             </dependency>
 
             <dependency>
@@ -115,26 +113,6 @@
                 <groupId>com.fasterxml.jackson.core</groupId>
                 <artifactId>jackson-databind</artifactId>
                 <version>${jackson.version}</version>
-            </dependency>
-
-            <dependency>
-                <groupId>commons-collections</groupId>
-                <artifactId>commons-collections</artifactId>
-                <version>${commons-collection.version}</version>
-                <scope>runtime</scope>
-            </dependency>
-
-            <dependency>
-                <groupId>commons-beanutils</groupId>
-                <artifactId>commons-beanutils</artifactId>
-                <version>${commons-beanutils.version}</version>
-                <scope>compile</scope>
-                <exclusions>
-                    <exclusion>
-                        <groupId>commons-logging</groupId>
-                        <artifactId>commons-logging</artifactId>
-                    </exclusion>
-                </exclusions>
             </dependency>
 
             <dependency>
