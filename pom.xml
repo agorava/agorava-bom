@@ -87,6 +87,13 @@
 
 			<dependency>
 				<groupId>org.agorava</groupId>
+				<artifactId>agorava-picketlink</artifactId>
+				<version>${project.version}</version>
+				<scope>compile</scope>
+			</dependency>
+
+			<dependency>
+				<groupId>org.agorava</groupId>
 				<artifactId>agorava-core-impl-cdi</artifactId>
 				<version>${project.version}</version>
 				<scope>runtime</scope>
