@@ -4,4 +4,4 @@ general:
 
 test: 
   post:
-    - cp ~/target/*.pom $CIRCLE_ARTIFACTS 
+    - cp target/*.pom $CIRCLE_ARTIFACTS 
