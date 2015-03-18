@@ -4,4 +4,4 @@ general:
 
 test: 
   post:
-    - cp home/ubuntu/agorava-bom/target/*.pom $CIRCLE_ARTIFACTS 
+    - ld $CIRCLE_PROJECT_USERNAME 
