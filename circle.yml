@@ -1,3 +1,5 @@
 general:
   artifacts:
     - "target/*.pom" # relative to the build directory
+test: 
+   - cp /home/ubuntu/agorava/agorava-bom/target/*.pom $CIRCLE_ARTIFACTS 
