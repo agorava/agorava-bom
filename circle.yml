@@ -1,0 +1,3 @@
+general:
+  artifacts:
+    - "target/*.pom" # relative to the build directory
