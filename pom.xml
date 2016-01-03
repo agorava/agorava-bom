@@ -22,12 +22,12 @@
 	<parent>
 		<groupId>org.sonatype.oss</groupId>
 		<artifactId>oss-parent</artifactId>
-		<version>7</version>
+		<version>9</version>
 	</parent>
 
 	<groupId>org.agorava</groupId>
 	<artifactId>agorava-bom</artifactId>
-	<version>0.7.0.1</version>
+	<version>0.7.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<licenses>
@@ -62,7 +62,6 @@
 
 	<dependencyManagement>
 		<dependencies>
-
 			<dependency>
 				<groupId>javax.enterprise</groupId>
 				<artifactId>cdi-api</artifactId>
@@ -76,7 +75,6 @@
 				<version>${javax.inject.version}</version>
 				<scope>provided</scope>
 			</dependency>
-
 
 			<dependency>
 				<groupId>org.agorava</groupId>
@@ -182,6 +180,19 @@
 
 		</dependencies>
 	</dependencyManagement>
+
+	<distributionManagement>
+		<repository>
+			<id>bintray-release</id>
+			<name>oss-jfrog-artifactory-release</name>
+			<url>https://oss.jfrog.org/artifactory/oss-release-local</url>
+		</repository>
+		<snapshotRepository>
+			<id>bintray-snapshot</id>
+			<name>oss-jfrog-artifactory-snapshot</name>
+			<url>https://oss.jfrog.org/artifactory/oss-snapshot-local</url>
+		</snapshotRepository>
+	</distributionManagement>
 
 	<profiles>
 		<profile>
