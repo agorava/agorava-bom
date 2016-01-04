@@ -49,15 +49,15 @@
 		<cdi-1.version>1.0-SP4</cdi-1.version>
 		<cdi-1-1.version>1.1</cdi-1-1.version>
 		<jackson.version>2.3.0</jackson.version>
-		<deltaspike.version>0.7</deltaspike.version>
+		<deltaspike.version>1.0.0</deltaspike.version>
 		<servlet.version>3.0.1</servlet.version>
 		<maven-gpg-plugin.version>1.4</maven-gpg-plugin.version>
 		<nexus-maven-plugin.version>2.1</nexus-maven-plugin.version>
 
 		<javax.inject.version>1</javax.inject.version>
-		<jsf-api.version>2.0</jsf-api.version>
+		<jsf-api.version>2.1</jsf-api.version>
 		<!-- PicketLink included in WildFly 8.0 -->
-		<picketlink.version>2.5.2.Final</picketlink.version>
+		<picketlink.version>2.6.0.Final</picketlink.version>
 	</properties>
 
 	<dependencyManagement>
@@ -173,7 +173,7 @@
 
 			<dependency>
 				<groupId>org.picketlink</groupId>
-				<artifactId>picketlink-impl</artifactId>
+				<artifactId>picketlink-commmon</artifactId>
 				<version>${picketlink.version}</version>
 				<scope>runtime</scope>
 			</dependency>
