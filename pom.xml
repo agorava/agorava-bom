@@ -27,7 +27,6 @@
 
 	<groupId>org.agorava</groupId>
 	<artifactId>agorava-bom</artifactId>
-	<version>0.7.1-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<licenses>
@@ -235,4 +234,5 @@
 			</build>
 		</profile>
 	</profiles>
+	<version>0.7.1</version>
 </project>
