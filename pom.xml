@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright 2014-2016 Agorava
+  ~ Copyright 2014-2017 Agorava
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -28,7 +28,8 @@
 	<groupId>org.agorava</groupId>
 	<artifactId>agorava-bom</artifactId>
 	<packaging>pom</packaging>
-
+	<version>0.7.2-SNAPSHOT</version>
+	
 	<licenses>
 		<license>
 			<name>The Apache Software License, Version 2.0</name>
@@ -234,5 +235,4 @@
 			</build>
 		</profile>
 	</profiles>
-	<version>0.7.1</version>
 </project>
