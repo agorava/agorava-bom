@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-  ~ Copyright 2014-2017 Agorava
+  ~ Copyright 2014-2019 Agorava
   ~
   ~ Licensed under the Apache License, Version 2.0 (the "License");
   ~ you may not use this file except in compliance with the License.
@@ -46,8 +46,9 @@
 	</scm>
 
 	<properties>
-		<cdi-1.version>1.0-SP4</cdi-1.version>
+		<cdi-1.version>1.2</cdi-1.version>
 		<cdi-1-1.version>1.1</cdi-1-1.version>
+		<cdi-2.version>2.0</cdi-2.version>
 		<jackson.version>2.10.1</jackson.version>
 		<deltaspike.version>1.0.0</deltaspike.version>
 		<servlet.version>3.0.1</servlet.version>

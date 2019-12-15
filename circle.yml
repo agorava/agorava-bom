@@ -1,7 +1,0 @@
-general:
-  artifacts:
-    - "target/*.pom" # relative to the build directory
-
-#test: 
-#  post:
-#    - ld $CIRCLE_PROJECT_USERNAME 
