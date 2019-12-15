@@ -19,14 +19,13 @@ jobs:
       - checkout
         
       # run tests!
-      - run: mvn --batch-mode test jacoco:report
+      - run: mvn --batch-mode test
       
-      - run: bash <(curl -s https://codecov.io/bash)
   deployment:
     docker:
       # specify the version you desire here
       - image: circleci/openjdk:8-jdk
- 
+
     working_directory: ~/repo
 
     environment:
