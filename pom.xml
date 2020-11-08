@@ -28,7 +28,7 @@
 	<groupId>org.agorava</groupId>
 	<artifactId>agorava-bom</artifactId>
 	<packaging>pom</packaging>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	
 	<licenses>
 		<license>
@@ -41,7 +41,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/agorava/agorava-bom.git</connection>
 		<developerConnection>scm:git:git@github.com:agorava/agorava-bom.git</developerConnection>
-		<url>http://github.com/agorava/agorava-bom</url>
+		<url>https://github.com/agorava/agorava-bom</url>
 		<tag>HEAD</tag>
 	</scm>
 
