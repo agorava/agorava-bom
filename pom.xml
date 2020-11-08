@@ -158,7 +158,7 @@
 
 			<dependency>
 				<groupId>javax.faces</groupId>
-				<artifactId>jsf-api</artifactId>
+				<artifactId>javax.faces-api</artifactId>
 				<version>${jsf-api.version}</version>
 				<scope>provided</scope>
 			</dependency>
